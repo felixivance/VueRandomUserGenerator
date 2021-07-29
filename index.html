@@ -13,6 +13,8 @@
         <img v-bind:src="picture" :alt="`${firstName} ${lastName}`" :class="gender"/>
       <h1>{{firstName}} {{lastName}}</h1>
       <h3>Email: {{email}}</h3>
+      <p>Age: {{age}}</p>
+      <br>
       <button :class="gender" @click="getUser()">Get Random User</button>
     </div>
     <script src="https://unpkg.com/vue@next"></script>

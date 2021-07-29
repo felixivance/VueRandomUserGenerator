@@ -9,7 +9,12 @@
 
 </head>
 <body>
-    <div class="" id="app"></div>
+    <div class="" id="app">
+        <img v-bind:src="picture" :alt="`${firstName} ${lastName}`" :class="gender"/>
+      <h1>{{firstName}} {{lastName}}</h1>
+      <h3>Email: {{email}}</h3>
+      <button :class="gender" @click="getUser()">Get Random User</button>
+    </div>
     <script src="https://unpkg.com/vue@next"></script>
     <script src="app.js"></script>
 </body>
